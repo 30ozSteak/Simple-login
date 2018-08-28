@@ -8,6 +8,8 @@
 
 body{ 
  height: 100vh;
+ background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
+ center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
 }
 
 .app-title{
@@ -39,14 +41,6 @@ body{
   }
 }
 
-.app-mockup {
-  height: 100vh;
-  justify-content: center;
-  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
-  text-align: center;
-}
-
 .app-landing{
   text-align: center;
 }
@@ -62,14 +56,12 @@ body{
   font-size: 1.5rem;
   font-weight: 100;
   padding: 2rem 0;
+  margin-top: 2rem;
 }
 
 
 /*  bottom half  */
 
-.bottom-half{
-  margin-top: 4rem;
-}
 
 button {
   padding: 15px 0;
@@ -103,7 +95,6 @@ button {
 
 .copyright{
   color: rgb(192, 192, 192);
-  padding-top: 5px;;
-  position: relative;
+  padding-top: 20px;
 }
 
