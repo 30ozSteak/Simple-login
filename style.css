@@ -10,6 +10,7 @@ body{
  height: 100vh;
  background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
  center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
+ overflow: hidden;
 }
 
 .app-title{
