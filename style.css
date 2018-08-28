@@ -98,3 +98,12 @@ button {
   color: rgb(192, 192, 192);
 }
 
+@media only screen and (max-width: 375px){
+  .spinning-globe{
+    top: 10;
+  }
+
+  button{
+    margin-bottom: .5rem;
+  }
+ }
