@@ -6,94 +6,46 @@
   text-align: center;
 }
 
-li{
-  list-style-type: none;
-}
-
-.app-intro{
-  text-align: center;
-  padding-top: 4rem;
-  display: grid;
-  grid-template-columns: 15rem 20rem;
-  align-content: center;
-  justify-content: center;
-}
-
-.app-intro img{
-  width: 15rem;
-  height: auto;
-  margin: .5rem;
-  padding: 1rem;
-  border-radius: 60px;
-  border: 1px solid rgba(0, 0, 0, 0.274);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.699);
-}
-
-.app-intro p{
-  font-size: 4rem;
-  padding-top: 1rem;
-
-}
-
-.app-intro p span{
-  letter-spacing: 4px;
-  display: inline-block;
-}
-
 .app-title{
   font-weight: 600;
 }
 
-.app-intro .one-line{
-  font-size: 1rem;
-  font-weight: 200;
-  grid-area: 2/2
+.spinning-globe{
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 150px;
+  margin-bottom: 2.5rem;
+  left: 50%;
+  background: center / cover  url(img/earth.png);
+  box-shadow: inset 0 0 40px rgba(255, 255, 255,.5);
+  position: relative;
+  animation: 🗺️ 35s linear infinite;
 }
 
-.synopsis{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
+@keyframes 🗺️{
+  0%{
+    background-position: 0 0;
+  }
 
-.synopsis p{
-  width: 40rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 100;
-  margin-top: 2rem;
+  100%{
+    background-position: 719px 0;
+  }
 }
 
 .app-mockup {
-  margin-left: auto;
-  margin-right: auto;
-  width: 25rem;
-  height: 45rem;
+  height: 100vh;
+  /* display: grid; */
+  justify-content: center;
   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-  center / cover
-    url(https://source.unsplash.com/collection/2479456/1600x900);
-  filter: blur
-}
-
-ul{
-  display: flex;
-  justify-content: space-between;
-  font-size: .9rem;
-  color: white;
-}
-
-.left-side-clock {
-  display: flex;
-  margin-right: 2.5rem;
+  center / cover url(https://source.unsplash.com/collection/2479456/1600x900);
+  text-align: center;
 }
 
 .app-landing{
   text-align: center;
-}
-
-.app-landing img {
-  width: 13rem;
-  margin-top: 4rem;
 }
 
 .app-landing h1{
@@ -106,15 +58,14 @@ ul{
   color: white;
   font-size: 1.5rem;
   font-weight: 100;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 
 /*  bottom half  */
 
-
 .bottom-half{
-  text-align: center;
+  margin-top: 4rem;
 }
 
 button {
@@ -122,11 +73,14 @@ button {
   width: 20rem;
   color: white;
   margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius:60px;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 3px;
   border: none;
+  display: block;
 }
 
 .log-in{
@@ -150,39 +104,3 @@ button {
   position: relative;
 }
 
-.copyright:hover:before{
-  content: 'TootToot!';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: .5rem;
-  color: white;
-  transform:rotate(15deg);
-  bottom: 5px;
-  left: 3rem;
-}
-
-.spinning-globe{
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  top: 150px;
-  margin-bottom: 2.5rem;
-  left: 50%;
-  background: center / cover  url(img/earth.png);
-  box-shadow: inset 0 0 40px rgba(255, 255, 255,.5);
-  position: relative;
-  animation: 🗺️ 20s linear infinite;
-}
-
-@keyframes 🗺️{
-  0%{
-    background-position: 0 0;
-  }
-
-  100%{
-    background-position: 719px 0;
-  }
-}
